@@ -1,1 +1,1 @@
-# Generative-AI-and-ChatGPT
+# Generative AI and ChatGPT Guide
