@@ -76,18 +76,30 @@ defined task or a limited set of tasks.
 * some real-time examples of Narrow Al applications:
   1. Virtual Personal Assistants:
       1. _Examples_: Siri (Apple), Alexa (Amazon), Google Assistant
-      2. _Capabilities_: These virtual assistants use natural language processing (NLP) to understand and respond to user queries. They can perform tasks like setting
-       reminders, sending messages, and providing information based on predefined commands.
+      2. _Capabilities_: These virtual assistants use natural language processing (NLP) to understand and respond to user            queries. They can perform tasks like setting reminders, sending messages, and providing information based on                predefined commands.
 
   2. Image and Speech Recognition:
       1. _Examples_: Google Photos, Microsoft Face ID, Speech-to-Text applications
-      2. _Capabilities_: Narrow Al systems can analyze images to recognize faces, objects, and scenes. Speech recognition applications convert spoken language into text,               enabling hands-free operation and transcription services.
+      2. _Capabilities_: Narrow Al systems can analyze images to recognize faces, objects, and scenes. Speech recognition            applications convert spoken language into text, enabling hands-free operation and transcription services.
          
   3. Recommendation Systems:
       1. _Examples_: Netflix recommendations, Amazon product recommendations, Spotify playlists
-      2. _Capabilities_: Narrow Al algorithms analyze user behavior and preferences to
+      2. _Capabilities_: Narrow Al algorithms analyze user behavior.
 
-
+General AI (Strong
+Strong Al, Also known as Artificial General Intelligence (AGI), Strong Al represents
+the pinnacle of Al development, with the potential to exhibit human-like cognitive
+abilities across a broad spectrum of domains.
+Unlike Narrow Al (ANI), which is specialized and task-focused, Strong Al aims to
+replicate human-level cognitive abilities.
+Characteristics: Strong Al exhibits the following key attributes:
+Versatility: The ability to perform a variety of tasks and adapt to new challenges.
+Learning and Adaptation: The capacity to learn from experience and transfer
+knowledge to different domains.
+Understanding Context: Understanding and interpreting context in a human-like
+manner.
+Consciousness: A level of self-awareness and consciousness akin to human
+cognition.
 
 
 
