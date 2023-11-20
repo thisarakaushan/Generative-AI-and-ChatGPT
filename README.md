@@ -305,3 +305,49 @@ word, which is known as the lemma
       <img width="317" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/816f0972-1ad3-47d4-bf3a-74e8286be78f">
 
     - Here still didn't apply any pre-processing step, that's why there are some words like _mining_, _mined_, and _is_. When we apply pre-processing steps like Stemming or Lemmatization those _mining_, _mined_, word will converted to _mine_. Also Stop Word approach will remove the word _is_.
+ 
+* _This approach is not considering any kind of special feature_.
+
+#### Bag-of-Words architecture
+
+* Each sentence can be represented as a vector. The length of this vector would be equal to the size of the vocabulary. Each entry in the vector would correspond to a term in the vocabulary, and the number in that particular entry would be the frequency of the term in the sentence under consideration. The lower limit for this number would be 0.
+* Eg: if the paticular token present in the documents 2 times, then frequency id 2 and so on...
+```
+["We are reading about Natural Language Processing Ilere",
+"Natur Language rocessmg ma - g computers comprehend language data",
+"Th field of Natural Language Processing is evolving everyday"]
+
+Processed data:
+tread', 'natural', 'language', 'computers', 'everyday', 'data',
+'evolve', 'field', 'process', 'comprehend', 'make']
+
+BOW matrix:
+array([[l., 1., 1., 0., 0., 0., 0., 0., 1., 0., 0.]
+      [0., 1., 2., 1., 0., 1., 0., 0., 1., 1., 1.]
+      [0., 1., 1., 0., 1., 0., 0., 1., 1., 0., 0.]]
+```
+
+* _This approach is **only** consider the frequency of terms_.
+
+#### TF-IDF vectors
+
+* **Frequency** of every term + how **importance** the term is.
+
+* TF-IDF stands for ```Term Frequency-Inverse Document Frequency```, and the tf-idf weight is a weight often used in information retrieval and text mining. This weight is a statistical measure used to evaluate how important a word is to a document in a collection or corpus.
+
+* Typically, the tf-idf weight is composed by two terms: the first computes the normalized _Term Frequency_ (TF), the number of times a word appears in a document. divided by the total number of words in that document: the second term is the _Inverse Document Frequency_ (IDF). computed as the logarithm of the number of the documents in the corpus divided by the number of documents where the specific word appears.
+
+* **TF**: Term Frequency. which measures how frequently a term occurs in a document.
+```
+TF(t) = (Number Of times term t appears in a document) / (Total number Of terms in the document).
+```
+
+* **IDF**: Inverse Document Frequency, which measures how important a term is. While computing TE all terms are considered equally important. However it is known that certain terms, such as "is". "of". and "that". may appear a lot of times but have little importance. Thus we need to weigh down the frequent terms While scale up the rare ones, by computing the following:
+```
+IDF(t) =log_e(Total number of documents / Number of documents with term t in it)
+```
+
+* Higher the tf-idf weight, more important the term is.
+```
+tf-idf weight = TF*IDF
+```
