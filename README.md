@@ -351,3 +351,23 @@ IDF(t) =log_e(Total number of documents / Number of documents with term t in it)
 ```
 tf-idf weight = TF*IDF
 ```
+* Example:
+```
+Consider document containing 100 words wherein the word(paticular word) cat appears 3 times.
+The term frequency (i.e., tf) for cat is then (3 / 100) = 0.03.
+
+Now, assume we have IO million documents and the word cat appears in one thousand of these.
+Then. the inverse document frequency (i.e., idf) is calculated as
+log(10,000,000 / 1000) = 4.
+
+Thus, the Tf•idf weight is the product Of these quantities:
+tf-idf = tf*idf  0.03 • 4 = 0.12.
+```
+
+* _**Drawback**_: ```Context is missing```. Context is nothing but in which propective or in which context a paticular term is used in the sentence or feedback or the review, that part is missing in these approaches.
+
+* This is been taking care by deep learning based approach which is the _Word-embedding_. 
+
+* In python, there is two most properly used packeges and libraries which are dedicated for the text data only.
+    1. ```nltk```: Natuarl Language Tool Kit.
+    2. ```spacy```; used for handle text data.
