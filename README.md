@@ -371,3 +371,40 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 * In python, there is two most properly used packeges and libraries which are dedicated for the text data only.
     1. ```nltk```: Natuarl Language Tool Kit.
     2. ```spacy```; used for handle text data.
+
+<br>
+
+<img width="1000" height="250" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/8db1d82a-9c31-4237-b5e3-e632df321d98">
+<br>
+
+## Neural Networks
+
+### Feed-Forward networks (Sequential NN):
+
+
+<img width="461" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/5affea5d-db23-42f0-bf94-00414da10693">
+<br><br>
+
+1. Perceptron are arranged in layers, with the first layer taking in inputs and the last layer producing outputs. The middle layers have no connection with the external world, and hence are called hidden layers.
+2. Each perceptron in one layer is connected to every perceptron on the next layer. Hence information is constantly "fed forward" from one layer to the next., and this explains why these networks are called feed-forward networks.
+3. There is no connection among perceptron in the same layer.
+4. Except first layer, other every layers do two functionalities.
+
+<br>
+<img width="490" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/0e8fe879-7d04-49f4-834e-d8fa5d25b7fb">
+<br><br>
+
+* This directed network diagram defines a relationship between the input signals received by the dendrites (x variables), and the output signal (y variable). Just as with the biological neuron, each dendrite's signal is weighted (w values) according to its importance. The input signals are summed by the cell body and the signal is passed on according to an activation function denoted by f.
+
+* A typical artificial neuron with n input dendrites can be represented by the formula shown above. The w weights allow each of the n inputs (denoted by xi) to contribute a greater or lesser amount to the sum of input signals. The net total is used by the activation function f(x), and the resulting signal, y(x), is the output axon.
+
+### Activation Functions:
+
+<br>
+<img width="451" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/cd1b6566-e245-4184-8b92-aa870282e32c">
+<br><br>
+
+* Universal Approximation Theorem, states that any continuous functions on compact subsets of R^2 can be approximated by a neural network with at least one hidden layer.
+* Gradient of the function is important for the training of the neural network.
+* Let us now 100k at derivative Of sigmoid function
+
