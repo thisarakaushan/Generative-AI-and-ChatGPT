@@ -164,40 +164,76 @@ brilliant human minds.
 ### GENERATIVE Al MODELS:
 
 1. **Generative adversarial network:**
-  * Generative Adversarial Networks (GANs) are a powerful cla of neural networks that are used for unsupervised learning.       The goal of GANs is to generate new, synthetic data that resembles some known data distribution.
+  * Generative Adversarial Networks (GANs) are a powerful cla of neural networks that are used for unsupervised learning. The goal of GANs is to generate new, synthetic data that resembles some known data distribution.
     
 2. **(Large) language model:**
-  * A (large) language model (LLM) refers to neural networks form eling and generating text data that typically combine         three characteristics i.e. transformer with an attention mechanism, next-word prediction use of large-scale datasets of     text.
+  * A (large) language model (LLM) refers to neural networks form eling and generating text data that typically combine three characteristics i.e. transformer with an attention mechanism, next-word prediction use of large-scale datasets of     text.
   
 3. **Prompt learning:** Prompt learning is a method for LLMs.
    
 4. **Diffusion probabilistic models:**
-  * Diffusion probability models are a class of latent variable models tha are common for various tasks such as image           generation.
+  * Diffusion probability models are a class of latent variable models tha are common for various tasks such as image generation.
    
 5. **Reinforcement learning from humanfeedback:**
-  * RLHF is used in conversational systems such as ChatGPT (OpenAl, 2022) for generating chat messages, such that new           answers accommodate the previous chat dialogue and ensure that the answers are in alignment with predefined human           preferences.
+  * RLHF is used in conversational systems such as ChatGPT (OpenAl, 2022) for generating chat messages, such that new answers accommodate the previous chat dialogue and ensure that the answers are in alignment with predefined human preferences.
    
 6. **seq2seq:**
-  * sequence-to-sequence (seq2seq) refers to machine learning approaches where an input sequence is mapped onto an output       quence.
+  * sequence-to-sequence (seq2seq) refers to machine learning approaches where an input sequence is mapped onto an output quence.
 
 **Examples:**
 
 1. Transformer:
-  * A transformer is a deep learning architecture that adopts t mechanism of self-attention which differentially weights        the importance of each part of the input data.
+  * A transformer is a deep learning architecture that adopts t mechanism of self-attention which differentially weights the importance of each part of the input data.
 
 2. Variational autoencoder:
-  * A variational autoencoder (VAE) is a type of neural network th is trained to learn a low-dimensional representation of      the input data.
+  * A variational autoencoder (VAE) is a type of neural network th is trained to learn a low-dimensional representation of the input data.
 
 3. ChatGPT:
-  * OpenAl has developed a language model that is close to a conversation with humans. It learns from interactions and          processes information based on its learnings.
+  * OpenAl has developed a language model that is close to a conversation with humans. It learns from interactions and processes information based on its learnings.
 
 4. DALL- E:
-  * DALL-E and DALL-E 2 are deep learning models developed by OpenA to generate digital images from natural language            descriptions, called "prompts".
+  * DALL-E and DALL-E 2 are deep learning models developed by OpenA to generate digital images from natural language descriptions, called "prompts".
 
 5. LaMDA:
   * LaMDA Al is a conversational Large discourse Model (LLM) developed by Google to power dialogue-based systems that       
     generate natural-sounding human discourse.
 
+
+## Natural Language Processing (Text Mining)...
+
+**What is TEXT MINING (TM)?**
+  * The use of computational methods and techniques to extract high quality information from text.
+  * A computational approach to the discovery of new, previously unknown information and/or knowledge through automated extraction of information from often large amounts of unstructured text.
+  * ```Corpus``` is the collection of documents, and document is a sentence consisting with words.
+
+#### Use cases of NLP:
+
+  1. Document Classification
+  2. Clustering / organizing documents
+  3. Documents summerization
+  4. Visualization od document space: often aimed to facilitating documnet search
+  5. Making prediction: stock market prices prediction on the analysis of news araticles and financial reports
+  6. Content-based recommender systems: for news articles, movies, books...
+
+#### Application of NLP:
+
+1. Virtual assastants (Alexa, Sau, Cortana, ...)
+2. Customer support tools (chatbots, email routers/ classifiers, ...)
+3. _Sentiment analysers_: based on the collection of customer feedbacks and reviews, we defied the sentiment and emotion of the customer whether the customer is satisfied with the product or not.
+4. _Machine Translators_: translate the language one language to another
+5. Document similarity systems.
+
+#### Text Pre-processing:
+
+* Remove puntuations like (. , ! $ () ' % @)
+* Remowng URLs
+* _Lower casing_ : To normalize the data
+* _Remove Stop words_ : Stopwords are the most commonly occurring words in a text Which do not provde any valuable information. stopwords like they,
+there. this, where, the............
+* ```**Tokenization**``` : Tokenizing separates text into units such as sentences or words
+* ```**Stemming**``` : Refers to the process of slicing the end or the beginning of words with the intention of removing affixes. It removes suffces. like "_ing_", "_ly_", "_s_", .... by a simple rule-based approach. It reduces the corpus of words but often the actual words get neglected.
+    - _eg_: Entitling Entitled->Entitl
+* ```**Lemmatization**``` : the objective of reductng a word to its base form and groupng together different forms of the same word. For example, the words "_running_", "_runs_" and "_ran_" are all forms of the word "**run**", so "run" is the lemma of all the prevous words.
 
 
 
