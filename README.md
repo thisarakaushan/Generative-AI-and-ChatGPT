@@ -229,13 +229,79 @@ brilliant human minds.
 * Remowng URLs
 * _Lower casing_ : To normalize the data
 * _Remove Stop words_ : Stopwords are the most commonly occurring words in a text Which do not provde any valuable information. stopwords like they,
-there. this, where, the............
-* ```**Tokenization**``` : Tokenizing separates text into units such as sentences or words
-* ```**Stemming**``` : Refers to the process of slicing the end or the beginning of words with the intention of removing affixes. It removes suffces. like "_ing_", "_ly_", "_s_", .... by a simple rule-based approach. It reduces the corpus of words but often the actual words get neglected.
+there. this, where, the, ...
+* ```Tokenization``` : Tokenizing separates text into units such as sentences or words
+* ```Stemming``` : Refers to the process of slicing the end or the beginning of words with the intention of removing affixes. It removes suffces. like "_ing_", "_ly_", "_s_", .... by a simple rule-based approach. It reduces the corpus of words but often the actual words get neglected.
     - _eg_: Entitling Entitled->Entitl
-* ```**Lemmatization**``` : the objective of reductng a word to its base form and groupng together different forms of the same word. For example, the words "_running_", "_runs_" and "_ran_" are all forms of the word "**run**", so "run" is the lemma of all the prevous words.
+* ```Lemmatization``` : the objective of reductng a word to its base form and groupng together different forms of the same word. For example, the words "_running_", "_runs_" and "_ran_" are all forms of the word "**run**", so "run" is the lemma of all the prevous words.
 
+##### Tokenization:
 
+* Tokenization is one of the fundamental things to do in any text-processing activity.
+* Tokenization is breaking the documents or sentences into chunks called tokens. Each token carries a semantic meaningg associated with it.
+* Tokenization can be thought of as a segmentation technique wherein you are trying to break down larger pieces of text chunks into smaller meaningful ones.
+* Tokens generally comprise words and numbers, but they can be extended to include punctuation marks, symbols, and, at times, understandable emoticons
 
+* Eg:
+```
+Sentence = "The capital of China is Beijing"
 
+Tokenization: 'The', 'capital', 'of, 'China', 'is', 'Beijing']
+```
 
+##### STOP-WORDS: 
+
+* An alternative or a complementary way to eliminate words that are
+(most probably) irrelevant for corpus analysis.
+* Stop-words are those words that (on their own) do not bear any
+information / meaning.
+* It is estimated that they represent 20-30% of words in any corpus.
+* There is no unique stop-words list. Frequently used lists are available at: ```http://www.ranks.nl/stopwords```
+* Potential problems with stop-words removal:
+    - the loss of original meaning and structure of text
+    - examples:
+      ```
+      "this is not a good option" -> "option"
+      "to be or not to be" -> null
+      ```
+
+##### LEMMATIZATION AND STEMMING:
+
+* Two approaches to decreasing variability of words by reducing
+different forms of words to their basic / root form.
+* ```Stemming``` is a crude heuristic process that chops off the ends of
+words without considering linguistic features of the words
+* E.g., argue, argued, argues, arguing -> _argu_
+<br>
+* ```Lemmatization``` refers to the use of a vocabulary and morphological
+analysis of words, aiming to return the base or dictionary form of a
+word, which is known as the lemma
+* E.g., argue, argued, argues, arguing -> _argue_
+
+#### NLP: Feature Extraction / Vectorization
+
+* When we have the colleted text data and do the pre-processing to clean the text data. That data convert to Numerical equivalent representation of the data (also known as Vector Representation) using _**Vectorization**_.
+
+* Text data offers a very umque proposition by not providing any direct representation available for it in terms of numbers. Machines only understand numbers.
+* Representing text using numbers is a challenge. At the same time, it is an opportunity to invent and try out approaches to represent text so that the maximum Information can be captured in the process.
+* Steps toward transforming text data into mathematical data structures that will provide insights on how to actually represent text using numbers and, consequently, build Natural Language Processmg (NLP) models.
+    - **Binary Weights** : ML-based
+    - **Exploring the Bag-of-Words** (BoW) architecture (also known as Count Vectorization) : ML-based 
+    - **TF-IDF vectors** : ML-based
+    - N-gram
+
+* There are Deep Learning based approaches like ```Word-Embedding```. It has 2 types:
+    - Continuous Back of Word approach (CBoW)
+    - Skip-gram
+
+#### Binary Weight
+
+* Weights take the value of O or 1, to reflect the presence (1) or absence (O) of the term in a particular document
+* Example:
+    - Docl: Text mining is to identify useful information.
+    - Doc2: Useful information is mined from text.
+    - Doc3: Apple is delicious.
+      
+      <img width="317" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/816f0972-1ad3-47d4-bf3a-74e8286be78f">
+
+    - Here still didn't apply any pre-processing step, that's why there are some words like _mining_, _mined_, and _is_. When we apply pre-processing steps like Stemming or Lemmatization those _mining_, _mined_, word will converted to _mine_. Also Stop Word approach will remove the word _is_.
