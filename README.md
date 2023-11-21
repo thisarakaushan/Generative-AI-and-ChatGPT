@@ -387,7 +387,7 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 <img width="461" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/5affea5d-db23-42f0-bf94-00414da10693">
 <br><br>
 
-1. Perceptron are arranged in layers, with the first layer taking in inputs and the last layer producing outputs. The middle layers have no connection with the external world, and hence are called hidden layers.
+1. Perceptron (simplest nn) are arranged in layers, with the first layer taking in inputs and the last layer producing outputs. The middle layers have no connection with the external world, and hence are called hidden layers.
 2. Each perceptron in one layer is connected to every perceptron on the next layer. Hence information is constantly "fed forward" from one layer to the next., and this explains why these networks are called feed-forward networks.
 3. There is no connection among perceptron in the same layer.
 4. Except first layer, other every layers do two functionalities.
@@ -436,12 +436,24 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 
 [see more](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) for CNN algorithms...
 
-* Mostly commonly used optimization technique in NN is **Gradient Descent**. We want to optimize the weight for minimum error. This optimizing technique try to adjust the value excecuting number of time in the backend.
+* Mostly commonly used optimization technique in NN is **Gradient Descent**. We want to optimize the weight for minimum error. This optimizing technique try to adjust the value executing number of time in the backend.
 
 * A NN is known as _**Dense NN**_ where we have the all connection available in between any of the two layers.
     - _Issue_ :- Problem of Overfitting (This happens when we _apply this on test data or live data_ but when we are building this model that will be performed very well)
-    - _Solution_ :- drop certain number of connection between any 2 layers
+    - _Solution_ :- randomly drop certain number of connection between any 2 layers (Dropout Layer)
 
+* Broadly there are 3 steps to follow to design any kind of nn;
+1. _N.N Architecture_ : specifies how many number of hidden layers you are going to use, number of nodes/nuerons and what is your activation fuction for each layer
+   
+2. _Compliation_ : Loss function (calculate the error) and select what is your optimizer (Adam, RMS Prop, Momentum, SGD)
+
+3. _Execution / training_ :- parameters like _**Batch Size**_ and _**Epoch**_
+    ```
+    - Batch Size: when we have 100 records, We can defined whether we want to apply nn or train the nn  over all the 100 records or if we want to train nn over some part of the data an each and every execution
+        eg: if my batch size = 50, then execution will done on first half of the data  and other half of the data repectively within 2 iteration.
+    
+    - Epoch: if my batch size = 50, epoch is 2, that means how many number of iteration it will take to cover the complete data; then it takes 2 iteration to cover all the data, also epoch is 2; overall is 2x2 mean all data need to cover 4 times
+    ```
 
 
 
