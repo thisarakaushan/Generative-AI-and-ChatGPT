@@ -133,7 +133,7 @@ brilliant human minds.
 ### Generative Models vs Discriminative Models:
 
 ```
-**Discriminative Models:** 
+Discriminative Models:
 
 • Discriminative Models are a family of models that do not generate new data points but
   learn to model boundaries around classes in a dataset instead.
@@ -146,7 +146,7 @@ brilliant human minds.
   - Decision Boundary: Learn explicit decision boundary between different classes
   
 
-**Generative Models:**
+Generative Models:
 
 • Generative Models are a fa ily of models that create new data points. They are generally
   used for unsupervised tasks.
@@ -199,7 +199,7 @@ brilliant human minds.
     generate natural-sounding human discourse.
 
 
-## Natural Language Processing (Text Mining)...
+## Natural Language Processing (Text Mining).............................................................................................
 
 **What is TEXT MINING (TM)?**
   * The use of computational methods and techniques to extract high quality information from text.
@@ -374,6 +374,8 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 
 <br>
 
+# Deep Learning..................................................................................................
+
 <img width="1000" height="250" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/8db1d82a-9c31-4237-b5e3-e632df321d98">
 <br>
 
@@ -407,4 +409,40 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 * Universal Approximation Theorem, states that any continuous functions on compact subsets of R^2 can be approximated by a neural network with at least one hidden layer.
 * Gradient of the function is important for the training of the neural network.
 * Let us now 100k at derivative Of sigmoid function
+
+* Deep Learning has different kind of Neural Networks:
+```
+1. ANN (Artificial Neural Networks) :- Taken for _Regression_ and _Classification_ tasks
+
+2. CNN (Convolutional Neural Networks) :- Taken for process images and videos analysis
+    - R.CNN (Regression with CNN)
+    - Fast CNN
+    - Faster CNN
+    - YOLO (You Only Look Once) : Object Detection Algorithm
+   
+3. RNN (Recurrent Neural Networks) : Taken for _sequential data analysis_
+    - For LSTM (Long Short Term Memory)
+    - For GRU ( Gated Recurrent Units)
+        * like _time series forecasting_ and _text data analysis_
+
+4. GAN (Generative Adversarial Networks)
+
+5. VAE (Variational Autoencoders)
+
+6. seq2seq model
+
+7. Trnasformers (attention mechanism)
+```
+
+[see more](https://towardsdatascience.com/r-cnn-fast-r-cnn-faster-r-cnn-yolo-object-detection-algorithms-36d53571365e) for CNN algorithms...
+
+* Mostly commonly used optimization technique in NN is **Gradient Descent**. We want to optimize the weight for minimum error. This optimizing technique try to adjust the value excecuting number of time in the backend.
+
+* A NN is known as _**Dense NN**_ where we have the all connection available in between any of the two layers.
+    - _Issue_ :- Problem of Overfitting (This happens when we _apply this on test data or live data_ but when we are building this model that will be performed very well)
+    - _Solution_ :- drop certain number of connection between any 2 layers
+
+
+
+
 
