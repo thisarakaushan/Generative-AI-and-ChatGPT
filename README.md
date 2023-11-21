@@ -449,10 +449,13 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 
 3. _Execution / training_ :- parameters like _**Batch Size**_ and _**Epoch**_
     ```
-    - Batch Size: when we have 100 records, We can defined whether we want to apply nn or train the nn  over all the 100 records or if we want to train nn over some part of the data an each and every execution
-        eg: if my batch size = 50, then execution will done on first half of the data  and other half of the data repectively within 2 iteration.
+    - Batch Size: when we have 100 records, We can defined whether we want to apply nn or train the nn
+                   over all the 100 records or if we want to train nn over some part of the data an each and every execution
+        eg: if my batch size = 50, then execution will done on first half of the data  and other half of the data
+            repectively within 2 iteration.
     
-    - Epoch: if my batch size = 50, epoch is 2, that means how many number of iteration it will take to cover the complete data; then it takes 2 iteration to cover all the data, also epoch is 2; overall is 2x2 mean all data need to cover 4 times
+    - Epoch: if my batch size = 50, epoch is 2, that means how many number of iteration it will take to cover the complete data;
+             then it takes 2 iteration to cover all the data, also epoch is 2; overall is 2x2 mean all data need to cover 4 times
     ```
 
 
