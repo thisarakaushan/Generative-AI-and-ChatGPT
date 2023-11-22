@@ -403,7 +403,7 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 ### Activation Functions:
 
 <br>
-<img width="451" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/cd1b6566-e245-4184-8b92-aa870282e32c">
+<img width="490" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/cd1b6566-e245-4184-8b92-aa870282e32c">
 <br><br>
 
 * Universal Approximation Theorem, states that any continuous functions on compact subsets of R^2 can be approximated by a neural network with at least one hidden layer.
@@ -457,6 +457,66 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
     - Epoch: if my batch size = 50, epoch is 2, that means how many number of iteration it will take to cover the complete data;
              then it takes 2 iteration to cover all the data, also epoch is 2; overall is 2x2 mean all data need to cover 4 times
     ```
+
+* Example: How to calculate hidden layer input value and output value;
+
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/e6ffe857-2b47-492f-83e1-971b3dadc742">
+
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/52155546-583a-40e0-9512-e85807e08745">
+<br>
+
+* According to the above figure the calculated output values for o1 = 0.513 and o2 = 0.7729 but actual values are o1 = 0.01 and o2 = 0.99. Now we want to calculate the error between actual value and calculated value.
+
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/bf0c71a4-b24d-48af-9a93-c5978c0ac05f">
+
+* Now tuning the weight values optimizer try to minimize the error value.
+  
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/d3eaf606-c916-43a4-a9be-da4fe5264196">
+
+* For minimize the value we will use the most popular ```Gradient Descent Optimizer``` technique. When it comes to optimize the weight values; each and every optimizer will follow ```Backward propagation```.
+
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/4331d02f-6599-4b95-a930-e6dfdd5176ad">
+
+<br><br>
+
+
+### RECURRENT NEURAL NETWORKS.........................................................................................................................................
+
+<br>
+<img width="566" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/f62d3b4e-da83-483f-b1f9-7feb977a9b78">
+
+<br><br>
+
+* Uses for Sequence data analysis / sequential process.
+* For hidden layer, it has own feedback layer and it works as a memory storage for hidden layer. That's why we are called that layer as _Recurrent_. ( means output of one hidden layer will be input to the next hidden layer node as well as current output layer)
+
+```
+1. Temporal lobe and ann: The temporal lobe might be well linked to the ANN with its main contribution.
+
+2. Frontal lobe and rnn: RNN are like short-term memory. You will learn that they can remember things that just happen in a previous couple of observation and apply that knowledge in the going forward. For humans, short-term memory is one of the frontal lobe's funvtions.
+
+3. Occipital lobe and cnn: The occipital lobe is linked to CNN. As we already know, CNNs are responsible for computer vision, recognition of images and objects, which makes them a perfect link to the occipital lobe.
+
+4. Parietal lobe: The parietal lobe is responsible for sensation perception and constructing a spatial-coordination system to represent the world around us, and we are yet to create a neural network which will fit into this category.
+```
+#### RNN Applications:
+
+1. **One to Many** : this the network with one input and multiple outputs.
+
+<img width="213" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/3b09f58b-2e63-45e0-a6e3-59fda7ac0579">
+
+<br>
+
+2. **Many to One**  : best example for that is the _Sentiment Analysis_, when you have lots of text, such as customer's feedback or review, and you need to gauge what's the chance that this feedback is positive r how positive this comment actually is, or how negative it is.
+
+3. **Many to Many** : network with multiple inputs and multiple outputs.
+    - eg:- Machine translation (Google translator) 
+
+<img width="420" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/ebadc7e0-2d46-4686-ac53-17981f8c2ef7">
+
+<br><br>
+
+
 
 
 
