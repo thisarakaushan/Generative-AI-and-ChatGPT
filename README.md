@@ -510,11 +510,43 @@ tf-idf = tf*idf  0.03 • 4 = 0.12.
 2. **Many to One**  : best example for that is the _Sentiment Analysis_, when you have lots of text, such as customer's feedback or review, and you need to gauge what's the chance that this feedback is positive r how positive this comment actually is, or how negative it is.
 
 3. **Many to Many** : network with multiple inputs and multiple outputs.
-    - eg:- Machine translation (Google translator) 
+    - eg:- Machine translation (Google translator), AI chatbots
 
 <img width="420" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/ebadc7e0-2d46-4686-ac53-17981f8c2ef7">
 
 <br><br>
+
+
+* Issue with RNN:
+  
+1. The Vanishing Gradient Problem:
+    - when we have to multiple number of gradient value for that we apply the _chain rule_; we assume that gradient value is 0.7 (if gradient value is less than 1). Now when we multiply 'n' number of 0.7 values that _result will be close to zero_. This is known as _Vanishing Gradient Problem_.
+
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/a80c126c-74bf-4a7e-aaaa-511389dfe32f">
+
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/91752a93-054f-4638-9f24-374109fd8da3">
+
+<br>
+
+##### Consequences of The Vanishing Gradient Problem:
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/45bbc061-2042-4bca-92b6-59b3174e4fea">
+
+##### Solution To The Vanishing Gradient Problem:
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/f1b4fc03-7d3e-4b62-a1bc-d35931d6f41b">
+
+<br><br>
+   
+2. Exploding Gradient Problem:
+     - opposite side of above senerio is known as _Exploding Gradient Problem_ means (if we have gradient value is higher than 1), then after multiplying all the gradient value the result will be very high.
+
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/32154bef-73cd-4504-99b1-c7d51f08c398">
+
+##### Factors Contributing To The Exploding Gradient Problem:
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/bd6d6525-982a-4b47-b36a-3064c4bd4d9b">
+
+##### Solution To The Exploding Gradient Problem:
+<img width="570" alt="image" src="https://github.com/thisarakaushan/Generative-AI-and-ChatGPT/assets/125348115/acebe1d0-6022-4a50-898f-e2dbc92dead1">
+
 
 
 
