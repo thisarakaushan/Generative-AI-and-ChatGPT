@@ -199,7 +199,7 @@ Generative Models:
     generate natural-sounding human discourse.
 
 
-## Natural Language Processing (Text Mining).............................................................................................
+## Natural Language Processing (Text Mining)....................................................................................
 
 **What is TEXT MINING (TM)?**
   * The use of computational methods and techniques to extract high quality information from text.
